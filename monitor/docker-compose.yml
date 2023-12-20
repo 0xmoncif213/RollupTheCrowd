@@ -1,0 +1,21 @@
+version: '2.2'
+
+services:
+  grafana:
+    image: grafana/grafana
+    container_name: dev_geth_grafana
+    ports:
+      - "10007:3000"
+    depends_on:
+      prometheus:
+        condition: service_started
+    volumes:
+      - ./grafana.db:/var/lib/grafana/grafana.db
+
+  prometheus:
+    image: prom/prometheus
+    container_name: dev_geth_prometheus
+    ports:
+      - "10008:9090"
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml

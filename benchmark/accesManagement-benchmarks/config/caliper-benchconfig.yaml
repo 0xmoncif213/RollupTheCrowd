@@ -1,0 +1,119 @@
+test:
+  name: Business logic 
+  description: Business logic performance test
+  workers:
+    type: local
+    number: 5
+  rounds:
+   - label: createAccount
+     txNumber: 100
+     rateControl:
+       type: maximum-rate
+       opts:
+         tps: 20
+         step: 5
+         sampleInterval: 10
+         includeFailed: true
+     workload:
+       module: workload/createAccount.js
+       arguments:
+        contract: admin
+        num: 1
+   - label: createAccount
+     txNumber: 500
+     rateControl:
+       type: maximum-rate
+       opts:
+         tps: 50
+         step: 5
+         sampleInterval: 10
+         includeFailed: true
+     workload:
+       module: workload/createAccount.js
+       arguments:
+        contract: admin
+        num: 2    
+   - label: createAccount
+     txNumber: 500
+     rateControl:
+       type: maximum-rate
+       opts:
+         tps: 100
+         step: 5
+         sampleInterval: 10
+         includeFailed: true
+     workload:
+       module: workload/createAccount.js
+       arguments:
+        contract: admin
+        num: 3
+   - label: createAccount
+     txNumber: 1000
+     rateControl:
+       type: maximum-rate
+       opts:
+         tps: 200
+         step: 5
+         sampleInterval: 10
+         includeFailed: true
+     workload:
+       module: workload/createAccount.js
+       arguments:
+        contract: admin
+        num: 4
+   - label: createAccount
+     txNumber: 2000
+     rateControl:
+       type: maximum-rate
+       opts:
+         tps: 400 
+         step: 5
+         sampleInterval: 10
+         includeFailed: true
+     workload:
+       module: workload/createAccount.js
+       arguments:
+        contract: admin
+        num: 5
+   - label: createAccount
+     txNumber: 2000
+     rateControl:
+       type: maximum-rate
+       opts:
+         tps: 400 
+         step: 6
+         sampleInterval: 10
+         includeFailed: true
+     workload:
+       module: workload/createAccount.js
+       arguments:
+        contract: admin
+        num: 6
+   - label: createAccount
+     txNumber: 2000
+     rateControl:
+       type: maximum-rate
+       opts:
+         tps: 500 
+         step: 6
+         sampleInterval: 10
+         includeFailed: true
+     workload:
+       module: workload/createAccount.js
+       arguments:
+        contract: admin
+        num: 7
+   - label: createAccount
+     txNumber: 2000
+     rateControl:
+       type: maximum-rate
+       opts:
+         tps: 1000 
+         step: 6
+         sampleInterval: 10
+         includeFailed: true
+     workload:
+       module: workload/createAccount.js
+       arguments:
+        contract: admin
+        num: 8

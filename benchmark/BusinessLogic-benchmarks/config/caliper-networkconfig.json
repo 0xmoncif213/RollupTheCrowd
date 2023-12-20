@@ -1,0 +1,318 @@
+{
+  "caliper": {
+      "blockchain": "ethereum"
+  },
+  "ethereum": {
+      "url": "ws://172.17.0.1:8546", 
+      "contractDeployerAddress": "0xf17f52151EbEF6C7334FAD080c5704D77216b732",
+      "contractDeployerAddressPrivateKey": "0xae6ae8e5ccbfb04590405997ee2d52d2b330726137b875053c36d94e974d162f",
+      "fromAddress":"0xf17f52151EbEF6C7334FAD080c5704D77216b732",
+      "fromAddressPrivateKey":"0xae6ae8e5ccbfb04590405997ee2d52d2b330726137b875053c36d94e974d162f",
+      "transactionConfirmationBlocks": 1,
+      "chainId": 1337,
+      "contracts": {
+          "taskContract":{
+            "address":"0x4B2ec5B01678A6b7f66dd6C17FC04CE939AB104E",
+              "estimateGas": true,
+              "abi":[
+                {
+                  "inputs": [
+                    {
+                      "internalType": "string",
+                      "name": "_taskHash",
+                      "type": "string"
+                    },
+                    {
+                      "internalType": "string",
+                      "name": "_bidHash",
+                      "type": "string"
+                    },
+                    {
+                      "internalType": "bool",
+                      "name": "_answer",
+                      "type": "bool"
+                    },
+                    {
+                      "internalType": "address",
+                      "name": "_requester",
+                      "type": "address"
+                    }
+                  ],
+                  "name": "createAnswer",
+                  "outputs": [],
+                  "stateMutability": "nonpayable",
+                  "type": "function"
+                },
+                {
+                  "inputs": [
+                    {
+                      "internalType": "string",
+                      "name": "_taskHash",
+                      "type": "string"
+                    },
+                    {
+                      "internalType": "string",
+                      "name": "_bidHash",
+                      "type": "string"
+                    },
+                    {
+                      "internalType": "address",
+                      "name": "_worker",
+                      "type": "address"
+                    }
+                  ],
+                  "name": "createBid",
+                  "outputs": [],
+                  "stateMutability": "nonpayable",
+                  "type": "function"
+                },
+                {
+                  "inputs": [
+                    {
+                      "internalType": "string",
+                      "name": "_taskHash",
+                      "type": "string"
+                    },
+                    {
+                      "internalType": "uint256",
+                      "name": "_amount",
+                      "type": "uint256"
+                    },
+                    {
+                      "internalType": "address",
+                      "name": "_requester",
+                      "type": "address"
+                    }
+                  ],
+                  "name": "createTask",
+                  "outputs": [],
+                  "stateMutability": "nonpayable",
+                  "type": "function"
+                },
+                {
+                  "inputs": [
+                    {
+                      "internalType": "string",
+                      "name": "_taskHash",
+                      "type": "string"
+                    },
+                    {
+                      "internalType": "string",
+                      "name": "_bidHash",
+                      "type": "string"
+                    },
+                    {
+                      "internalType": "string",
+                      "name": "_solutionHash",
+                      "type": "string"
+                    },
+                    {
+                      "internalType": "address",
+                      "name": "_worker",
+                      "type": "address"
+                    },
+                    {
+                      "internalType": "address",
+                      "name": "_evaluator",
+                      "type": "address"
+                    }
+                  ],
+                  "name": "participateInEvaluation",
+                  "outputs": [],
+                  "stateMutability": "nonpayable",
+                  "type": "function"
+                },
+                {
+                  "inputs": [
+                    {
+                      "internalType": "string",
+                      "name": "_taskHash",
+                      "type": "string"
+                    },
+                    {
+                      "internalType": "string",
+                      "name": "_bidHash",
+                      "type": "string"
+                    },
+                    {
+                      "internalType": "string",
+                      "name": "_solutionHash",
+                      "type": "string"
+                    },
+                    {
+                      "internalType": "address",
+                      "name": "_worker",
+                      "type": "address"
+                    }
+                  ],
+                  "name": "submitSolution",
+                  "outputs": [],
+                  "stateMutability": "nonpayable",
+                  "type": "function"
+                },
+                {
+                  "inputs": [
+                    {
+                      "internalType": "address",
+                      "name": "_AccesManagementContractAdress",
+                      "type": "address"
+                    },
+                    {
+                      "internalType": "string",
+                      "name": "_taskHash",
+                      "type": "string"
+                    }
+                  ],
+                  "stateMutability": "nonpayable",
+                  "type": "constructor"
+                },
+                {
+                  "inputs": [],
+                  "name": "accessManagementInstance",
+                  "outputs": [
+                    {
+                      "internalType": "contract Admin",
+                      "name": "",
+                      "type": "address"
+                    }
+                  ],
+                  "stateMutability": "view",
+                  "type": "function"
+                },
+                {
+                  "inputs": [
+                    {
+                      "internalType": "string",
+                      "name": "_taskHash",
+                      "type": "string"
+                    }
+                  ],
+                  "name": "getTaskAmount",
+                  "outputs": [
+                    {
+                      "internalType": "uint256",
+                      "name": "",
+                      "type": "uint256"
+                    }
+                  ],
+                  "stateMutability": "view",
+                  "type": "function"
+                },
+                {
+                  "inputs": [
+                    {
+                      "internalType": "string",
+                      "name": "_taskHash",
+                      "type": "string"
+                    }
+                  ],
+                  "name": "getTaskCompletnessFactor",
+                  "outputs": [
+                    {
+                      "internalType": "uint256",
+                      "name": "",
+                      "type": "uint256"
+                    }
+                  ],
+                  "stateMutability": "view",
+                  "type": "function"
+                },
+                {
+                  "inputs": [
+                    {
+                      "internalType": "string",
+                      "name": "_taskHash",
+                      "type": "string"
+                    }
+                  ],
+                  "name": "getTaskQualityFactor",
+                  "outputs": [
+                    {
+                      "internalType": "uint256",
+                      "name": "",
+                      "type": "uint256"
+                    }
+                  ],
+                  "stateMutability": "view",
+                  "type": "function"
+                },
+                {
+                  "inputs": [],
+                  "name": "maxAmount",
+                  "outputs": [
+                    {
+                      "internalType": "uint256",
+                      "name": "",
+                      "type": "uint256"
+                    }
+                  ],
+                  "stateMutability": "view",
+                  "type": "function"
+                },
+                {
+                  "inputs": [],
+                  "name": "minAmount",
+                  "outputs": [
+                    {
+                      "internalType": "uint256",
+                      "name": "",
+                      "type": "uint256"
+                    }
+                  ],
+                  "stateMutability": "view",
+                  "type": "function"
+                },
+                {
+                  "inputs": [
+                    {
+                      "internalType": "string",
+                      "name": "",
+                      "type": "string"
+                    }
+                  ],
+                  "name": "tasks",
+                  "outputs": [
+                    {
+                      "internalType": "string",
+                      "name": "taskID",
+                      "type": "string"
+                    },
+                    {
+                      "internalType": "address",
+                      "name": "requester",
+                      "type": "address"
+                    },
+                    {
+                      "internalType": "uint256",
+                      "name": "amount",
+                      "type": "uint256"
+                    },
+                    {
+                      "internalType": "uint256",
+                      "name": "completnessFactor",
+                      "type": "uint256"
+                    },
+                    {
+                      "internalType": "uint256",
+                      "name": "qualityFactor",
+                      "type": "uint256"
+                    },
+                    {
+                      "internalType": "uint256",
+                      "name": "maxBids",
+                      "type": "uint256"
+                    },
+                    {
+                      "internalType": "bool",
+                      "name": "exist",
+                      "type": "bool"
+                    }
+                  ],
+                  "stateMutability": "view",
+                  "type": "function"
+                }
+              ]
+          }
+      }
+  }
+}

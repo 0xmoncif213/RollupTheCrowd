@@ -1,0 +1,91 @@
+test:
+  name: Reputation model 
+  description: Reputation model performance test
+  workers:
+    type: local
+    number: 1
+  rounds:
+   - label: warm-up (ignore results)
+     txNumber: 100
+     rateControl:
+       type: maximum-rate
+       opts:
+         tps: 20
+         step: 5
+         sampleInterval: 10
+         includeFailed: true
+     workload:
+       module: workload/calculateNewRep.js
+       arguments:
+        contract: ManageReputation
+        num: 1
+   - label: Run 1
+     txNumber: 250
+     rateControl:
+       type: maximum-rate
+       opts:
+         tps: 50
+         step: 5
+         sampleInterval: 10
+         includeFailed: true
+     workload:
+       module: workload/calculateNewRep.js
+       arguments:
+        contract: ManageReputation
+        num: 2
+   - label: Run 2
+     txNumber: 400
+     rateControl:
+       type: maximum-rate
+       opts:
+         tps: 80
+         step: 5
+         sampleInterval: 10
+         includeFailed: true
+     workload:
+       module: workload/calculateNewRep.js
+       arguments:
+        contract: ManageReputation
+        num: 3
+   - label: Run 3
+     txNumber: 500
+     rateControl:
+       type: maximum-rate
+       opts:
+         tps: 100 
+         step: 5
+         sampleInterval: 10
+         includeFailed: true
+     workload:
+       module: workload/calculateNewRep.js
+       arguments:
+        contract: ManageReputation
+        num: 4
+   - label: Run 4
+     txNumber: 750
+     rateControl:
+       type: maximum-rate
+       opts:
+         tps: 150 
+         step: 5
+         sampleInterval: 10
+         includeFailed: true
+     workload:
+       module: workload/calculateNewRep.js
+       arguments:
+        contract: ManageReputation
+        num: 5
+   - label: Run 5
+     txNumber: 1000
+     rateControl:
+       type: maximum-rate
+       opts:
+         tps: 200 
+         step: 5
+         sampleInterval: 10
+         includeFailed: true
+     workload:
+       module: workload/calculateNewRep.js
+       arguments:
+        contract: ManageReputation
+        num: 6

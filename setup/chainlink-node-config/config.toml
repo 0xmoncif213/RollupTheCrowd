@@ -1,0 +1,17 @@
+[Log]
+Level = 'debug'
+
+[WebServer]
+AllowOrigins = '\*'
+SecureCookies = false
+
+[WebServer.TLS]
+HTTPSPort = 0
+
+[[EVM]]
+ChainID = '1337'
+
+[[EVM.Nodes]]
+Name = 'node-1'
+WSURL = 'ws://172.17.0.1:8546'
+HTTPURL = 'http://172.17.0.1:8545'

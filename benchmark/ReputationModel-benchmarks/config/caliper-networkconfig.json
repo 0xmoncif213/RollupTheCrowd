@@ -1,0 +1,110 @@
+{
+    "caliper": {
+        "blockchain": "ethereum"
+    },
+    "ethereum": {
+        "url": "ws://172.17.0.1:8546", 
+        "contractDeployerAddress": "0xf17f52151EbEF6C7334FAD080c5704D77216b732",
+        "contractDeployerAddressPrivateKey": "0xae6ae8e5ccbfb04590405997ee2d52d2b330726137b875053c36d94e974d162f",
+        "fromAddress":"0xf17f52151EbEF6C7334FAD080c5704D77216b732",
+        "fromAddressPrivateKey":"0xae6ae8e5ccbfb04590405997ee2d52d2b330726137b875053c36d94e974d162f",
+        "transactionConfirmationBlocks": 1,
+        "chainId": 1337,
+        "contracts": {
+            "ManageReputation": {
+                "address":"0xA9F8FeF0B3DF9159F1443427dAa79210fCEB009C",
+                "estimateGas": true,
+                "abi":[
+                  {
+                    "inputs": [
+                      {
+                        "internalType": "string",
+                        "name": "_taskHash",
+                        "type": "string"
+                      },
+                      {
+                        "internalType": "address",
+                        "name": "_worker",
+                        "type": "address"
+                      },
+                      {
+                        "internalType": "uint256",
+                        "name": "_completnessAvg",
+                        "type": "uint256"
+                      },
+                      {
+                        "internalType": "uint256",
+                        "name": "_qualityAvg",
+                        "type": "uint256"
+                      }
+                    ],
+                    "name": "calculateNewRep",
+                    "outputs": [],
+                    "stateMutability": "nonpayable",
+                    "type": "function"
+                  },
+                  {
+                    "inputs": [
+                      {
+                        "internalType": "address",
+                        "name": "_accesManagementContractAdress",
+                        "type": "address"
+                      },
+                      {
+                        "internalType": "address",
+                        "name": "_taskContractInstance",
+                        "type": "address"
+                      }
+                    ],
+                    "stateMutability": "nonpayable",
+                    "type": "constructor"
+                  },
+                  {
+                    "inputs": [
+                      {
+                        "internalType": "address",
+                        "name": "_worker",
+                        "type": "address"
+                      },
+                      {
+                        "internalType": "uint256",
+                        "name": "_newRep",
+                        "type": "uint256"
+                      }
+                    ],
+                    "name": "updateRepuation",
+                    "outputs": [],
+                    "stateMutability": "nonpayable",
+                    "type": "function"
+                  },
+                  {
+                    "inputs": [],
+                    "name": "accessManagementInstance",
+                    "outputs": [
+                      {
+                        "internalType": "contract Admin",
+                        "name": "",
+                        "type": "address"
+                      }
+                    ],
+                    "stateMutability": "view",
+                    "type": "function"
+                  },
+                  {
+                    "inputs": [],
+                    "name": "taskContractInstance",
+                    "outputs": [
+                      {
+                        "internalType": "contract TaskContract",
+                        "name": "",
+                        "type": "address"
+                      }
+                    ],
+                    "stateMutability": "view",
+                    "type": "function"
+                  }
+                ]
+            }
+        }
+    }
+}

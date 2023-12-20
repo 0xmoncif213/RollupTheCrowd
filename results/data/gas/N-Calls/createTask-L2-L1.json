@@ -1,0 +1,79 @@
+{
+    "functions":{
+      "createTask": [
+        {
+          "Gas used": 212615,
+          "Number of calls": 1
+        },
+        {
+            "Gas used": 396636,
+            "Number of calls": 2
+        },
+        {
+            "Gas used":896100,
+            "Number of calls": 5
+        },
+        {
+            "Gas used":1792080,
+            "Number of calls": 10
+        },
+        {
+            "Gas used": 2646120,
+            "Number of calls": 15
+        }, 
+        {
+            "Gas used": 3966360,
+            "Number of calls": 20
+        },
+        {
+            "Gas used": 44127000,
+            "Number of calls": 25
+        }
+        
+      ], 
+      "createTask-zkRollup":[
+        {
+          "committing": 38828,
+          "proving":27260,
+          "execution":23964,
+          "Number of calls": 1
+        },
+        {
+            "committing": 33964,
+            "proving":27272,
+            "execution":23964,
+            "Number of calls": 2
+        },
+        {
+            "committing": 33348,
+            "proving":27284,
+            "execution":23964,
+            "Number of calls": 5
+        },
+        {
+            "committing": 34348,
+            "proving":27272,
+            "execution":23952,
+            "Number of calls": 10
+        },
+        {
+            "committing": 34324,
+            "proving":27272,
+            "execution":23964,
+            "Number of calls": 15
+        }, 
+        {
+            "committing": 35396,
+            "proving":27284,
+            "execution":23964,
+            "Number of calls": 20
+        },
+        {
+            "committing": 68744,
+            "proving":29904,
+            "execution":26584,
+            "Number of calls": 25
+        }
+      ]
+    }
+    }

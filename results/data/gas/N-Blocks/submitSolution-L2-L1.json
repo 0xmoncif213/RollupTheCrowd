@@ -1,0 +1,110 @@
+{
+    "functions":{
+      "submitSolution": [
+        {
+          "Gas used": 52650,
+          "Number of blocks": 100
+        },
+        {
+            "Gas used": 52686,
+            "Number of blocks": 200
+        },
+        {
+            "Gas used": 52686,
+            "Number of blocks": 300
+        },
+        {
+            "Gas used": 52686,
+            "Number of blocks": 400
+        },
+        {
+            "Gas used": 52686,
+            "Number of blocks": 500
+        }, 
+        {
+            "Gas used": 52686,
+            "Number of blocks": 600
+        },
+        {
+            "Gas used": 52686,
+            "Number of blocks": 700
+        },
+        {
+            "Gas used": 52686,
+            "Number of blocks": 800
+        },
+        {
+            "Gas used":52686,
+            "Number of blocks": 900
+        }
+        ,
+        {
+            "Gas used": 52686,
+            "Number of blocks": 1000
+        }
+      ], 
+      "submitSolution-zkRollup":[
+        {
+            "committing": 34072,
+            "proving":27284,
+            "execution":23964,
+            "Number of blocks": 100
+          },
+          {
+              "committing": 33536,
+              "proving":27272,
+              "execution":23952,
+              "Number of blocks": 200
+          },
+          {
+              "committing": 33288,
+              "proving":27260,
+              "execution":23952,
+              "Number of blocks": 300
+          },
+          {
+              "committing": 33312,
+              "proving":27272,
+              "execution":23964,
+              "Number of blocks": 400
+          },
+          {
+              "committing": 33312,
+              "proving":27272,
+              "execution":23964,
+              "Number of blocks": 500
+          }, 
+          {
+              "committing": 33312,
+              "proving":27272,
+              "execution":23964,
+              "Number of blocks": 600
+          },
+          {
+              "committing": 33596,
+              "proving":27284,
+              "execution":23964,
+              "Number of blocks": 700
+          },
+          {
+              "committing": 33632,
+              "proving":27284,
+              "execution":23964,
+              "Number of blocks": 800
+          },
+          {
+              "committing": 33548,
+              "proving":27284,
+              "execution":23964,
+              "Number of blocks": 900
+          }
+          ,
+          {
+              "committing": 33572,
+              "proving":27284,
+              "execution":23964,
+              "Number of blocks": 1000
+          }
+      ]
+    }
+    }

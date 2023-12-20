@@ -1,0 +1,354 @@
+{
+    "caliper": {
+        "blockchain": "ethereum"
+    },
+    "ethereum": {
+        "url": "ws://172.17.0.1:8546", 
+        "contractDeployerAddress": "0xf17f52151EbEF6C7334FAD080c5704D77216b732",
+        "contractDeployerAddressPrivateKey": "0xae6ae8e5ccbfb04590405997ee2d52d2b330726137b875053c36d94e974d162f",
+        "fromAddress":"0xf17f52151EbEF6C7334FAD080c5704D77216b732",
+        "fromAddressPrivateKey":"0xae6ae8e5ccbfb04590405997ee2d52d2b330726137b875053c36d94e974d162f",
+        "transactionConfirmationBlocks": 1,
+        "chainId": 1337,
+        "contracts": {
+            "admin":{
+              "address": "0xb9A219631Aed55eBC3D998f17C3840B7eC39C0cc",
+              "estimateGas": true,
+              "abi":[
+                {
+                  "inputs": [
+                    {
+                      "internalType": "address",
+                      "name": "_address",
+                      "type": "address"
+                    }
+                  ],
+                  "name": "addOracleAdress",
+                  "outputs": [],
+                  "stateMutability": "nonpayable",
+                  "type": "function"
+                },
+                {
+                  "inputs": [
+                    {
+                      "internalType": "address",
+                      "name": "_newOwner",
+                      "type": "address"
+                    }
+                  ],
+                  "name": "addOwner",
+                  "outputs": [],
+                  "stateMutability": "nonpayable",
+                  "type": "function"
+                },
+                {
+                  "inputs": [
+                    {
+                      "internalType": "address payable",
+                      "name": "_address",
+                      "type": "address"
+                    }
+                  ],
+                  "name": "createAccount",
+                  "outputs": [],
+                  "stateMutability": "nonpayable",
+                  "type": "function"
+                },
+                {
+                  "inputs": [
+                    {
+                      "internalType": "uint256",
+                      "name": "_alpha",
+                      "type": "uint256"
+                    }
+                  ],
+                  "name": "setAlpha",
+                  "outputs": [],
+                  "stateMutability": "nonpayable",
+                  "type": "function"
+                },
+                {
+                  "inputs": [
+                    {
+                      "internalType": "address",
+                      "name": "_user",
+                      "type": "address"
+                    },
+                    {
+                      "internalType": "uint256",
+                      "name": "_newRep",
+                      "type": "uint256"
+                    }
+                  ],
+                  "name": "setReputation",
+                  "outputs": [],
+                  "stateMutability": "nonpayable",
+                  "type": "function"
+                },
+                {
+                  "inputs": [],
+                  "stateMutability": "nonpayable",
+                  "type": "constructor"
+                },
+                {
+                  "inputs": [
+                    {
+                      "internalType": "address payable",
+                      "name": "_newUser",
+                      "type": "address"
+                    }
+                  ],
+                  "name": "validateUser",
+                  "outputs": [],
+                  "stateMutability": "nonpayable",
+                  "type": "function"
+                },
+                {
+                  "inputs": [
+                    {
+                      "internalType": "uint256",
+                      "name": "",
+                      "type": "uint256"
+                    }
+                  ],
+                  "name": "accountlist",
+                  "outputs": [
+                    {
+                      "internalType": "address payable",
+                      "name": "",
+                      "type": "address"
+                    }
+                  ],
+                  "stateMutability": "view",
+                  "type": "function"
+                },
+                {
+                  "inputs": [
+                    {
+                      "internalType": "address",
+                      "name": "",
+                      "type": "address"
+                    }
+                  ],
+                  "name": "accountslist",
+                  "outputs": [
+                    {
+                      "internalType": "address payable",
+                      "name": "userAdress",
+                      "type": "address"
+                    },
+                    {
+                      "internalType": "uint256",
+                      "name": "reputation",
+                      "type": "uint256"
+                    },
+                    {
+                      "internalType": "uint256",
+                      "name": "numberOfSubmissions",
+                      "type": "uint256"
+                    },
+                    {
+                      "internalType": "bool",
+                      "name": "exist",
+                      "type": "bool"
+                    }
+                  ],
+                  "stateMutability": "view",
+                  "type": "function"
+                },
+                {
+                  "inputs": [
+                    {
+                      "internalType": "address",
+                      "name": "",
+                      "type": "address"
+                    }
+                  ],
+                  "name": "accountsPending",
+                  "outputs": [
+                    {
+                      "internalType": "bool",
+                      "name": "",
+                      "type": "bool"
+                    }
+                  ],
+                  "stateMutability": "view",
+                  "type": "function"
+                },
+                {
+                  "inputs": [
+                    {
+                      "internalType": "address",
+                      "name": "",
+                      "type": "address"
+                    }
+                  ],
+                  "name": "adminExist",
+                  "outputs": [
+                    {
+                      "internalType": "bool",
+                      "name": "",
+                      "type": "bool"
+                    }
+                  ],
+                  "stateMutability": "view",
+                  "type": "function"
+                },
+                {
+                  "inputs": [
+                    {
+                      "internalType": "uint256",
+                      "name": "",
+                      "type": "uint256"
+                    }
+                  ],
+                  "name": "adminsList",
+                  "outputs": [
+                    {
+                      "internalType": "address",
+                      "name": "",
+                      "type": "address"
+                    }
+                  ],
+                  "stateMutability": "view",
+                  "type": "function"
+                },
+                {
+                  "inputs": [
+                    {
+                      "internalType": "address",
+                      "name": "_user",
+                      "type": "address"
+                    }
+                  ],
+                  "name": "getNumberOfSubmissions",
+                  "outputs": [
+                    {
+                      "internalType": "uint256",
+                      "name": "",
+                      "type": "uint256"
+                    }
+                  ],
+                  "stateMutability": "view",
+                  "type": "function"
+                },
+                {
+                  "inputs": [
+                    {
+                      "internalType": "address",
+                      "name": "_user",
+                      "type": "address"
+                    }
+                  ],
+                  "name": "getReputation",
+                  "outputs": [
+                    {
+                      "internalType": "uint256",
+                      "name": "",
+                      "type": "uint256"
+                    }
+                  ],
+                  "stateMutability": "view",
+                  "type": "function"
+                },
+                {
+                  "inputs": [
+                    {
+                      "internalType": "address",
+                      "name": "_address",
+                      "type": "address"
+                    }
+                  ],
+                  "name": "isOracle",
+                  "outputs": [
+                    {
+                      "internalType": "bool",
+                      "name": "",
+                      "type": "bool"
+                    }
+                  ],
+                  "stateMutability": "view",
+                  "type": "function"
+                },
+                {
+                  "inputs": [
+                    {
+                      "internalType": "address",
+                      "name": "_user",
+                      "type": "address"
+                    }
+                  ],
+                  "name": "isOwner",
+                  "outputs": [
+                    {
+                      "internalType": "bool",
+                      "name": "",
+                      "type": "bool"
+                    }
+                  ],
+                  "stateMutability": "view",
+                  "type": "function"
+                },
+                {
+                  "inputs": [
+                    {
+                      "internalType": "address",
+                      "name": "_user",
+                      "type": "address"
+                    }
+                  ],
+                  "name": "isPending",
+                  "outputs": [
+                    {
+                      "internalType": "bool",
+                      "name": "",
+                      "type": "bool"
+                    }
+                  ],
+                  "stateMutability": "view",
+                  "type": "function"
+                },
+                {
+                  "inputs": [
+                    {
+                      "internalType": "address",
+                      "name": "_user",
+                      "type": "address"
+                    }
+                  ],
+                  "name": "isUser",
+                  "outputs": [
+                    {
+                      "internalType": "bool",
+                      "name": "",
+                      "type": "bool"
+                    }
+                  ],
+                  "stateMutability": "view",
+                  "type": "function"
+                },
+                {
+                  "inputs": [
+                    {
+                      "internalType": "uint256",
+                      "name": "",
+                      "type": "uint256"
+                    }
+                  ],
+                  "name": "pendingList",
+                  "outputs": [
+                    {
+                      "internalType": "address payable",
+                      "name": "",
+                      "type": "address"
+                    }
+                  ],
+                  "stateMutability": "view",
+                  "type": "function"
+                }
+              ]
+              }
+        }
+    }
+}
+
