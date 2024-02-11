@@ -1,3 +1,4 @@
+
 # RollupTheCrowd
 
 ## Introduction
@@ -12,7 +13,7 @@ Welcome to the repository of RollupTheCrowd! This repository contains all the co
 - `interactions/`: housing scripts and files dedicated to managing deployements and  interactions with both L1 and L2.
 - `monitor/`: designated directory for scripts and files related to monitoring and tracking functionalities. It provides a ready monitoring environment to collect and visualize geth metrics with prometheus and grafana. it can be configured for both L1 and L2.
 - `results/`: This folder includes the evaluation metrics and visualization outputs generated during the study.
-- `setup/`: Contains the initial configuration and installation process required to prepare Chainlink and ZkSync nodes.
+- `setup/`: Contains the initial configuration and installation process required to run the whole framework (BC-Client/Chainlink/ZkSync) nodes.
 
 ### How to Use This Repository
 
