@@ -21,7 +21,7 @@ If you wish to reproduce the experiments or explore the code, please refer to th
 
 ### Contact and contributions
 
-Thank you for visiting this repository and taking an interest in our project. If you have any questions or feedback, feel free to contact me at [a.bendada@esi-sba.dz]. Your insights and suggestions are highly appreciated.
+Thank you for visiting this repository and taking an interest in our project. If you have any questions or feedback, feel free to contact me at [mounsf.bendada@gmail.com]. Your insights and suggestions are highly appreciated.
 
 
 Best regards,
